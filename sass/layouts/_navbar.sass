@@ -1,0 +1,36 @@
+nav
+  background-color: transparent
+  height: 100px
+  width: 100%
+  border: 1px solid black
+  display: flex
+  justify-content: space-between
+  ul
+    width: 80%
+    list-style: none
+    display: flex
+    align-items: center
+    li
+      margin: 0 20px
+      font-size: 20px
+  #navLeft
+    justify-content: flex-start
+
+  #navRight
+    justify-content: flex-end
+    li
+    text-align: right
+
+  #navRight,  #navLeft
+    display: none
+    @include medium-bp
+      display: block
+    @include navFlex-bp
+      display: flex
+  div
+    z-index: 3
+
+  .logo
+    height: 90px
+    @include large-bp
+      height: 160px
